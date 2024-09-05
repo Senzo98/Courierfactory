@@ -1,0 +1,130 @@
+p* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Sans-Serif;
+}
+body{
+  background: #fff;
+  color: #080808;
+}
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-image: url(topbar.png);
+  background-size: cover;
+  background-position: center;
+}
+.midsection{
+  margin-top: 15%;
+}
+h1 {
+  font-family: imago bold;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #294693;
+}
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.input-container input[type="number"] {
+  position: relative;
+  width: 88%;
+  height: 52px;
+  border-radius: 8px;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.input-container button {
+  position: absolute;
+  right: 35px;
+  margin-top: 6px;
+  height: 45px;
+  width: 80px;
+  background-color: #294693;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.input-container input[type="number"]::placeholder {
+  font-size: 16px;
+  padding-left: 15px;
+}
+.image {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 10px;
+  animation: breath 5s ease-in-out infinite; /* Breathing animation */
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f07b31;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.custom-alert .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #721c24;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer{
+  position: absolute;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f07b31;
+  height: 120px;
+  width: 93%;
+  border-radius: 10px;
+}
+p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+}
